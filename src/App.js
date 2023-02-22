@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import logo from './img/TempClothIA-logo.png';
 import './App.css';
-
+import AppLogin from './components/app-login/app-login';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section className='App-component'>
+        <div className="App-header">
+          <img src={logo} width='50' /><p>TempClothIA</p>
+        </div>
+        <AppLogin/>
+      </section>
     </div>
   );
 }
